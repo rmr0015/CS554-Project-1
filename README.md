@@ -22,8 +22,13 @@ curl "http://localhost:8080/convert?lbs=NaN"
 
 ## Deploy on EC2
 
-1. Launch EC2 (Amazon Linux 2 or Ubuntu).
+1. Launch Ubuntu t3.micro EC2.
 2. Install Node.js + npm.
 3. Clone or copy this repo to EC2 instance.
 4. Run `npm install && node server.js`.
 5. Adjust Security Group to allow inbound TCP/8080.
+
+## Cleanup
+
+1. Stop or terminate the instance
+2. Delete the key pair used
