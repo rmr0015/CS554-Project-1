@@ -13,6 +13,11 @@ Then test:
 
 ```bash
 curl "http://localhost:8080/convert?lbs=150"
+curl "http://localhost:8080/convert?lbs=0"
+curl "http://localhost:8080/convert?lbs=0.1"
+curl "http://localhost:8080/convert"
+curl "http://localhost:8080/convert?lbs=-5"
+curl "http://localhost:8080/convert?lbs=NaN"
 ```
 
 ## Deploy on EC2
