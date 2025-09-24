@@ -15,5 +15,13 @@ This project is the creation of a REST web service running on an AWS EC2 instanc
 - Security group; allow inbound SSH only from personal IP to restrict access, and allow all inbound on 80 and 8080
 - Create a key pair for more secure access
 
+## Server implementation
+- The server is run using Node.js
+- Express is used for routing
+- Morgan is used for logging
+
+## Run as a systemd Service
+- Systemd is used to allow the service to run by itself and to survive reboots
+
 ## Security and Cost hygiene
-When finished, delete key pair used, and delete orphaned EBS volumes and/or the instance
+- When finished, delete key pair used, and delete orphaned EBS volumes and/or the instance
